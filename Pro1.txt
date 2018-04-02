@@ -1,28 +1,5 @@
-﻿PL project ( OurScheme )
+OurScheme
 
-
-  Print 'Welcome to OurScheme!'
-  Print '\n'
-  Print '> '
-
-  repeat
-  
-    ReadSExp(expr);
-    
-    PrintSExp(expr); // You must "pretty print" this data structure.
-      
-    Print '> '
-    
-  until (OR (user entered '(exit)')
-            (END-OF-FILE encountered)
-        )
-  
-  if ( END-OF-FILE encountered ) // and NOT 「user entered '(exit)'」
-    Print 'ERROR (no more input) : END-OF-FILE encountered' 
-
-  Print '\n'
-  Print 'Thanks for using OurScheme!' // Doesn't matter whether there is an
-                                      // '\n' at the end
 2. Syntax of OurScheme
 
 terminal (token) :
