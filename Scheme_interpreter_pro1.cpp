@@ -244,11 +244,11 @@ class MyTree {
       else if ( tree_1->mTokenType == LEFT_PAREN ) {
         BuildTree( tree_1 ) ;
         if ( tree_1->mTokenType == NIL ) treeNode_1.mTree_type = ATOM_ONE ;
-        else See_If_End_Tree( tree_1, treeNode_1 ), treeNode_1.mTree_type = DOTTED_PAIR , tree_1 = Change_To_Project_Two( tree_1 ) ;
+        else See_If_End_Tree( tree_1, treeNode_1 ), treeNode_1.mTree_type = DOTTED_PAIR ; //, tree_1 = Change_To_Project_Two( tree_1 ) ;
         treeNode_1.mTree = tree_1, throw treeNode_1 ;
       } // else if()
       else if ( tree_1->mTokenType == QUOTE ) {
-        tree_1 = new Node, tree_1 = BuildQuoteTree() , tree_1 = Change_To_Project_Two( tree_1 ),
+        tree_1 = new Node, tree_1 = BuildQuoteTree() ; //, tree_1 = Change_To_Project_Two( tree_1 ),
         treeNode_1.mTree = tree_1, treeNode_1.mTree_type = LIST, throw treeNode_1 ;  
       } // else if()
       else OutQTree( tree_1 ) ;
